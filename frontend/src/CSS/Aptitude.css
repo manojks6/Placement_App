@@ -1,5 +1,89 @@
 .Aptitude_Body {
-     margin-top: -22px;
-     min-height: 600px;
+     margin-top: -2px;
+     min-height: 500px;
      background-color: #E2E9FF;
+     display: flex;
 }
+
+.content {
+     margin: 0px 10px 10px 100px;
+     padding: 18px;
+}
+
+/* below is same as <a> tag */
+.content a {
+     margin: 0px 0px 14px 10px;
+     padding: 2px;
+     color: black;
+     display: grid;
+}
+
+/* 
+
+         {aptiQustions.map((item,index) => (
+            <div className="Aptitude_Body">
+               <div className="num">
+                     <a href="q">{item.qustion}</a>
+               </div>
+            </div>
+         ))} */
+
+
+
+/* <div className="Aptitude_Body">
+            <div className="num">
+               {<h5>{aptiQustions.length}</h5>}
+               <h3> Numericals</h3>
+               <div className="content">
+                  <Link to="/aaaa">hello</Link>
+                  <a href="/">Problems on Numbers</a>
+                  <a href="/">Problems on Trains</a>
+                  <a href="Compound Interest and Simple Interest">
+                     Compound Interest and Simple Interest
+                  </a>
+                  <a href="Problems on H.C.F and L.C.M">
+                     Problems on H.C.F and L.C.M
+                  </a>
+                  <a href="Profit and Loss">Profit and Loss</a>
+                  <a href="Average">Average</a>
+                  <a href="Permutation and Combination">
+                     Permutation and Combination
+                  </a>
+                  <a href="Probability">Probability</a>
+                  <a href="Time and Distanc">Time and Distance</a>
+                  <a href="Time and Work">Time and Work</a>
+                  <a href="Ratio and Proportion">Ratio and Proportion</a>
+               </div>
+            </div>
+            <div className="ver">
+               <h3> Verbal</h3>
+               <div className="content">
+                  <a href="q">Synonyms</a>
+                  <a href="q">Sentence Correction</a>
+                  <a href="q">Ordering of Sentences</a>
+                  <a href="q">Antonyms</a>
+                  <a href="q">Comprehension</a>
+                  <a href="q">Idioms and Phrases</a>
+                  <a href="q">Change of Speech</a>
+                  <a href="q">Spellings</a>
+                  <a href="q">Fill in the blanks</a>
+                  <a href="q">Sentence formation</a>
+               </div>
+            </div>
+            <div className="log">
+               <h3> Logical Resoning </h3>
+               <div className="content">
+                  <a href="q">Analogies</a>
+                  <a href="q">Mirror Images</a>
+                  <a href="q">Pattern Completion</a>
+                  <a href="q">Image Analysis</a>
+                  <a href="q">Letter and Symbol Series</a>
+                  <a href="q">Coding Decoding</a>
+                  <a href="q">Blood relations</a>
+                  <a href="q">Clocks</a>
+                  <a href="q">Direction</a>
+                  <a href="q">Seating arrangement</a>
+               </div>
+            </div>
+         </div>
+          */
