@@ -1,0 +1,19 @@
+.Body {
+     background-image: url(../Images/home.jpg);
+     background-repeat: no-repeat;
+     margin-top: 0px;
+     width: 1348px;
+     height: 600px;
+     background-size: cover;
+     margin-bottom: -22px;
+     opacity: 80%;
+}
+
+.Text {
+     color: antiquewhite;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     font-size: 50px;
+     font-weight: bold;
+     text-align: left;
+     padding: 120px 0px 0px 100px;
+}

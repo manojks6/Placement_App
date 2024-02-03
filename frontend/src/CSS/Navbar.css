@@ -1,0 +1,50 @@
+.navbar {
+     display: flex;
+     align-items: center;
+     background-color: #202124;
+     padding: 25px;
+}
+
+.menu {
+     justify-content: space-between;
+}
+
+.menu a {
+     color: white;
+     font-size: large;
+     font-weight: bold;
+     margin: 25px;
+     text-decoration: none;
+}
+
+.menu a:hover {
+     color: aqua;
+     transition: 900ms;
+}
+
+.button input {
+     height: 25px;
+     width: 220px;
+     font-family: 'Open Sans', sans-serif;
+     border: none;
+     border-top-left-radius: 5px;
+     border-bottom-left-radius: 5px;
+}
+
+.button button {
+     height: 27.5px;
+     width: 100px;
+     cursor: pointer;
+     padding: 2px;
+     background-color: #0A1551;
+     color: #D9D9D9;
+     font-weight: bold;
+     border: none;
+     border-top-right-radius: 8px;
+     border-bottom-right-radius: 8px;
+}
+
+.button button:hover {
+     background-color: #00A0DF;
+     transition: 400ms;
+}
