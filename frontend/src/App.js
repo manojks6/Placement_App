@@ -14,6 +14,7 @@ function App() {
           <Route path="/dsa" element={<Dsa />} />
           <Route path="/aptitude" element={<Aptitude />} />
           <Route path="/resources" element={<Resources />} />
+          {/* <Route path="/aptitude_answer" element={<Aptitude_answer />} /> */}
         </Routes>
       </BrowserRouter>
     </div>

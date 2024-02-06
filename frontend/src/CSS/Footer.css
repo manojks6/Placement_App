@@ -1,9 +1,24 @@
-.h{
-     margin-top: 0px;
+.h {
+     margin-top: 15px;
      background-color: #353535;
      height: 100px;
      width: 1348px;
      color: azure;
      align-items: center;
-     text-align: center;
+     display: flex;
+}
+
+.col {
+     margin: 0px 200px 11px 50px;
+     font-size: small;
+}
+
+ul {
+     list-style: none;
+
+}
+
+.col li {
+     margin-top: 8px;
+
 }
