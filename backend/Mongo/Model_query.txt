@@ -1,3 +1,137 @@
 const u= async ()=>{await listOfAptiTopicsModel.insertMany([{type:"numericals",name:"Compound Interest"},{type:"numericals",name:"Partnership"},{type:"numericals",name:"Profit and Loss"},{type:"numericals",name:"Percentage"},{type:"numericals",name:"Average"},{type:"numericals",name:"Problems on Ages"}])}
 insertMany([{type:"verbal",name:"Antonyms"},{type:"verbal",name:"Synonyms"},{type:"verbal",name:"Sentence Formation"},{type:"verbal",name:"Sentence Correction"},{type:"verbal",name:"Ordering of Sentences"},{type:"verbal",name:"Change of Voice"},{type:"verbal",name:"Change of Speech"}])
 listOfAptiTopicsModel.insertMany([{type:"Logical Reasoning",name:"Analogies"},{type:"Logical Reasoning",name:"Pattern Completion"},{type:"Logical Reasoning",name:"Statement and Conclusion"},{type:"Logical Reasoning",name:"Letter Series"},{type:"Logical Reasoning",name:"Coding-Decoding"},{type:"Logical Reasoning",name:"Syllogism"}])
+
+const Aptitude=new mongoose.Schema({
+     Topic:{
+          type:String,
+          required:true
+     },
+     Q&A:[
+          {
+               question:{
+                    type:String,
+                    required:true
+               },
+               answer:{
+                     type:String,
+                    required:true
+               }
+          }
+          ]
+})
+
+
+
+
+
+AptitudeModel.insertMany([
+   {
+      Topic: "Problems on Trains",
+      QA: [
+         {
+            question:
+               "A train travels at a speed of 60 km/h. How long will it take to cover a distance of 240 km",
+            answer: "It will take 4 hours.",
+         },
+         {
+            question:
+               "Two trains start from the same station at the same time. One travels at 80 km/h, and the other at 100 km/h. When will they be 200 km apart?",
+            answer: "After 2 hours.",
+         },
+         {
+            question:
+               "A train is moving at a speed of 132kmph. If the length of the train is 110 meters, how long will it take to cross a railway platform 165 m long?",
+            answer: "7.5 s",
+         },
+      ],
+   },
+   {
+      Topic: "Probability",
+      QA: [
+         {
+            question:
+               "What is the probability of rolling a 6 on a fair six-sided die",
+            answer: " The probability is 1/6.",
+         },
+         {
+            question:
+               "If you flip a coin three times, what is the probability of getting exactly two heads?",
+            answer: "The probability is 3/8.",
+         }
+      ]
+   },
+   {
+      Topic: "Logical Reasoning",
+      QA: [
+         {
+            question:
+               "An old clock is set at 5 am. If the old clock loses 16 minutes in 24 hours, what will be the exact time when the clock indicates 10 pm on 4th day?",
+            answer: "11 pm",
+         },
+         {
+            question:
+               "What is the next number in the sequence: 2, 4, 8, 16, …?",
+            answer: "The next number is 32.",
+         },
+         {
+            question:
+               "If all cats are mammals and some mammals are carnivores, can we conclude that all cats are carnivores?",
+            answer: " No, we cannot make that conclusion.",
+         },
+         {
+            question:
+               " If A is taller than B, and B is taller than C, who is the shortest?",
+            answer: " C is the shortest.",
+         },
+         {
+            question:
+               "An accurate clock shows 8 am. Through how may degrees will the hour hand rotate when the clock shows 2 pm?",
+            answer: "Its 180°",
+         }
+      ]
+   },
+   {
+      Topic: "Time and Distance",
+      QA: [
+         {
+            question:
+               " If a car covers a distance of 360 km in 6 hours, what is its average speed?",
+            answer: "The average speed is 60 km/h.",
+         },
+         {
+            question:
+               "A person walks at a speed of 5 km/h. How long will it take to cover a distance of 25 km",
+            answer: "It will take 5 hours.",
+         },
+      ]
+   },
+   {
+      Topic: "Simple Interest",
+      QA: [
+         {
+            question:
+               "If the principal amount is ₹5,000, the rate of interest is 8%, and the time period is 3 years, what is the simple interest?",
+            answer: "The simple interest is ₹1,200.",
+         },
+         {
+            question:
+               "Find the principal amount if the simple interest is ₹450, the rate of interest is 6%, and the time period is 5 years ",
+            answer: " The principal amount is ₹3,000.",
+         },
+         {
+            question:
+               "What is the compound interest on a sum of ₹40,000 for 33 years at the rate of 11% per annum?",
+            answer: "₹14705.24",
+         }
+      ]
+   },
+   {
+      Topic: "Number Series",
+      QA: [
+         { question: "40 % is the passing marks. A student gets 250 marks yet fails by 38 marks. What are the maximum marks", answer: "720" },
+         { question: "The sum of the first sixty numbers from one to sixty is divisible by", answer: "61" },
+         { question: "A little boy name Varma added all natural numbers from 1 to 10. However, he added one number twice due to which the sum becomes 58. What is the number which Varma added twice?", answer: "3" }
+      ]
+   },
+]);

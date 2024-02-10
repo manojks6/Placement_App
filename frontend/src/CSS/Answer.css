@@ -1,0 +1,22 @@
+.body{
+     padding: 10px;
+     margin: 10px 20px 0px 0px;
+     color: white;
+     min-height: 100px;    
+     width:800px;
+     background-color:#0F172A;
+     border-radius: 10px;
+     
+}
+.QA{
+     margin-bottom: 30px ;
+     font-size: large;
+
+}
+.question{
+     margin-bottom: 2px;
+}
+.answer{
+     color: #E0D672;
+     
+}

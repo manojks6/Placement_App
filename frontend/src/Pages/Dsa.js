@@ -1,27 +1,60 @@
-import React from "react";
 import Navbar from "../Components/Navbar";
 import '../CSS/Dsa.css'
-// import axios from 'axios'
-// import { useState,useEffect } from 'react';
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import axios from "axios";
+import Answer from "../Components/Answer";
+
 function Dsa() {
-  // const[data,setData]=useState([]);
-  // useEffect(()=>{
-  //   axios.get("").then(res=>{
-  //     setData(res.data);
-  //   }).catch(err=>{
-  //     console.log(err);
-  //   })
-  // },[])
-  return (
-    <div>
-      <div className="Dsa_Navbar">
-        <Navbar />
+   const [data, setData] = useState([]);
+   const [QA, setQA] = useState([]);
+   const [ans, setAns] = useState(false);
+   useEffect(() => {
+      axios
+         .get("http://localhost:8000/dsa")
+         .then((res) => {
+            setData(res.data);
+            //console.log(res.data);
+         })
+         .catch((err) => {
+            console.log(err);
+         });
+   }, []);
+   const Topics = [],
+      qustionAnswer = [];
+   data.map((i, j) => <>{(qustionAnswer[j] = i.QA)};</>);
+   data.map((i, j) => <>{(Topics[j] = i.Topic)};</>);
+   const onClickListner = (index) => {
+      setAns(true);
+      setQA(qustionAnswer[index]);
+   };
+   return (
+      <div>
+         <div className="Aptitude_Navbar">
+            <Navbar />
+         </div>
+         <div className="Aptitude_Body">
+            <div className="content">
+              {data.length!=0? <h3> Topics</h3> : <marquee direction="right" scrollamount="14"> database connection failed</marquee>}
+               {Topics.map((topicname, index) => (
+                  <div className="items">
+                     <div className="link">
+                        <Link
+                           to={"/aptitude"}
+                           onClick={() => {
+                              onClickListner(index);
+                           }}>
+                           {topicname}
+                        </Link>
+                     </div>
+                  </div>
+               ))}
+            </div>
+            <div className="answers">{ans ? <Answer QA={QA} /> : <></>}</div>
+         </div>
+         <div></div>
       </div>
-      <div className="Dsa_Body">
-        <h1>Coding/DSA</h1>
-      </div>
-    </div>
-  );
+   );
 }
 
 export default Dsa;
