@@ -1,7 +1,9 @@
 const mongoose=require('mongoose')
+require('dotenv').config();
+const databaseUrl = process.env.DATABASE_URL;
 const connectDB=async()=>{
      try{
-          const connect =await mongoose.connect("mongodb+srv://root:1234@cluster0.ykchgar.mongodb.net/test?retryWrites=true&w=majority");
+          const connect =await mongoose.connect(databaseUrl);
           console.log("Mongo Connected");
      }
      catch(err){
