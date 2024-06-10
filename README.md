@@ -1,3 +1,5 @@
+
+https://github.com/manojks6/Placement_app/assets/118463406/bed38cc3-11c0-4204-95a7-6e854f7866a5
 **Placement Web Application (MERN Stack)**
 
 
@@ -10,3 +12,11 @@ The Placement Web Application is a comprehensive platform developed using the ME
 
 
 ![Screenshot (288)](https://github.com/manojks6/Placement_app/assets/118463406/f7abef41-fb01-428a-85e2-11710b116e07)
+
+
+
+
+https://github.com/manojks6/Placement_app/assets/118463406/24c40316-e727-4d01-a467-aeba5884c952
+
+
+
