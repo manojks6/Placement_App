@@ -1,6 +1,7 @@
 const mongoose=require('mongoose')
 require('dotenv').config();
 const databaseUrl = process.env.DATABASE_URL;
+const {A,DsaModel}=require("./MongoModels");
 const connectDB=async()=>{
      try{
           const connect =await mongoose.connect(databaseUrl);

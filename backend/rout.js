@@ -1,17 +1,17 @@
 const express = require("express");
 const expressHandler = require("express-async-handler");
 const router = express.Router();
-const AptitudeModels=require('./Mongo/MongoModels')
+const {AptitudeModel,DsaModel}=require('./Mongo/MongoModels')
 router.route("/dsa").get(
    expressHandler(async (req, res) => {
-      const x = await AptitudeModels.find({});
+      const x = await DsaModel.find({});
       res.json(x);
       // res.json({ msg: "DsaPage" });
    })
 );
 router.route("/aptitude").get(
    expressHandler(async (req, res) => {
-      const x = await AptitudeModels.find({});
+      const x = await AptitudeModel.find({});
       res.json(x);
    })
 )

@@ -8,7 +8,7 @@ function Answer(props) {
     {ans.map((i,j)=>
       <div className="QA">
         <div className='question'>{j+1}. {i.question}</div>
-        <div className='answer'> <b>Ans :</b> { i.answer}</div>
+        <div className='answer'> <b>Solution:</b> { i.answer}</div>
       </div>
       )}
     </div>

@@ -21,7 +21,7 @@ function Aptitude() {
          });
    }, []);
    const Topics = [],
-      qustionAnswer = [];
+   qustionAnswer = [];
    data.map((i, j) => <>{(qustionAnswer[j] = i.QA)};</>);
    data.map((i, j) => <>{(Topics[j] = i.Topic)};</>);
    const onClickListner = (index) => {

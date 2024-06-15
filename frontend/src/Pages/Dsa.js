@@ -21,13 +21,14 @@ function Dsa() {
          });
    }, []);
    const Topics = [],
-      qustionAnswer = [];
+   qustionAnswer = [];
    data.map((i, j) => <>{(qustionAnswer[j] = i.QA)};</>);
    data.map((i, j) => <>{(Topics[j] = i.Topic)};</>);
    const onClickListner = (index) => {
       setAns(true);
       setQA(qustionAnswer[index]);
    };
+   console.log(Topics);
    return (
       <div>
          <div className="Aptitude_Navbar">
@@ -40,7 +41,7 @@ function Dsa() {
                   <div className="items">
                      <div className="link">
                         <Link
-                           to={"/aptitude"}
+                           to={"/dsa"}
                            onClick={() => {
                               onClickListner(index);
                            }}>

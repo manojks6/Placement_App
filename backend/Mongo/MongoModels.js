@@ -19,7 +19,31 @@ const Aptitude = new mongoose.Schema({
      ],
   });
 
-  module.exports=mongoose.model("AptitudeModel",Aptitude);
+const Dsa = new mongoose.Schema({
+   Topic: {
+      type: String,
+      required: true,
+   },
+   QA: [
+      {
+         question: {
+            type: String,
+            required: true,
+         },
+         answer: {
+            type: String,
+            required: true,
+         },
+      },
+   ],
+});
+
+const AptitudeModel = mongoose.model('AptitudeModel', Aptitude);
+const DsaModel = mongoose.model('DsaModel', Dsa);
+module.exports = {
+   AptitudeModel,
+   DsaModel
+};
   
 // const apti = new mongoose.Schema({
 //    qustion: {
